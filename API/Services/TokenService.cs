@@ -12,7 +12,7 @@ namespace API.Services
         private readonly SymmetricSecurityKey _key;
         public TokenService(IConfiguration config)
         {
-            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("TokenKey")); ///TokenKey in-line
+            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("TokenKey-TokenKey-TokenKey-TokenKey-TokenKey-TokenKey-TokenKey-TokenKey-TokenKey")); ///TokenKey in-line
         }
 
         public string CreateToken(AppUser user)
